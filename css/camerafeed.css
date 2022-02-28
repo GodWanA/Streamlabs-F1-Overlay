@@ -1,0 +1,173 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 2px;
+    overflow: hidden;
+}
+
+.sponsorship-container {
+    width: 100%;
+    height: 70px;
+    display: block;
+}
+
+.sponsoship-inner-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.sponsor {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.sponsor-item {
+    display: block;
+    height: 0px;
+    overflow: hidden;
+    margin-top: 70px;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    position: absolute;
+}
+
+.inactive {
+    animation: sponsorClose;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.content {
+    height: 70px;
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    /*background-repeat: no-repeat;
+    overflow: hidden;
+    animation: sponsorOpen;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;*/
+}
+
+.active {
+    animation: sponsorOpen;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.background {
+    width: calc(100% - 4px);
+    height: calc(100% - 4px - 70px);
+    border-radius: 0 0 15px 0;
+    overflow: hidden;
+}
+
+.data-container {
+    display: block;
+}
+
+.data-inner-container {
+    padding: 5px;
+    padding-left: 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+.number-container {
+    background-color: white;
+    color: black;
+    height: 30px;
+    min-width: 30px;
+    border-radius: 0 0 4px 0;
+    padding: 0 2px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.number {
+    margin: auto;
+}
+
+.team-color {
+    background-color: white;
+    width: 5px;
+    height: 75%;
+    display: inline-flex;
+    margin: 0;
+    margin-left: 5px;
+    padding: 0;
+}
+
+.name-container {
+    margin: auto 5px;
+    display: inline-flex;
+    letter-spacing: 1px;
+}
+
+.first-name {
+    text-transform: capitalize;
+}
+
+.last-name {
+    text-transform: uppercase;
+    margin-left: 5px;
+    font-family: 'f1bold';
+}
+
+.camera-feed-container {
+    background-color: rgba(0, 0, 0, 1);
+    display: block;
+    width: 100%;
+    height: calc(100% - 40px);
+}
+
+.camera-feed {
+    /*background-color: rgba(30, 30, 30, 0.3);*/
+    background-color: green;
+    display: flex;
+    margin: 3px;
+    margin-top: 0;
+    width: calc(100% - 6px);
+    height: calc(100% - 3px);
+    border-radius: 0 0 12px 0;
+    overflow: hidden;
+}
+
+@keyframes sponsorClose {
+    0% {
+        margin-top: 0px;
+        height: 70px;
+    }
+    100% {
+        margin-top: 0px;
+        height: 0;
+    }
+}
+
+@keyframes sponsorOpen {
+    0% {
+        margin-top: 70px;
+        height: 0;
+    }
+    100% {
+        margin-top: 0px;
+        height: 70px;
+    }
+}

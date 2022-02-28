@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/showname.css">
+    <title>Showname</title>
+</head>
+
+<body>
+    <div class="wrapper d-hidden">
+        <div class="box">
+            <div class="data-container">
+                <div class="title-container">
+                    <div class="title"></div>
+                    <div class="team-container-twitch">
+                        <img class="team" src="./Images/team-twitch.png">
+                        <div class="team-fade-inner"></div>
+                        <div class="team-fade-outer"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="message-container">
+                <div class="message"></div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="data-container">
+                <div class="title-container">
+                    <div class="title"></div>
+                    <div class="team-container-youtube">
+                        <img class="team" src="./Images/team-youtube.png">
+                        <div class="team-fade-inner"></div>
+                        <div class="team-fade-outer"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="message-container">
+                <div class="message"></div>
+            </div>
+        </div>
+    </div>
+    <div class="log"></div>
+
+    <!-- Websocket -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js' type='text/javascript'></script>
+
+    <!-- Configok -->
+    <script src="./configs/streamlabs_account_config.js"></script>
+    <script src="./configs/showname_config.js"></script>
+
+    <!-- Vezérlők -->
+    <script src="./js/main.js"></script>
+    <script src="./js/showname.js"></script>
+</body>
+
+</html>
